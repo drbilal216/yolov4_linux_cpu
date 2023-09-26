@@ -92,9 +92,7 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/y
 ### Working with Webcam
 ./darknet detector demo cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights
 
-######################################
-###### yolov4-using self custom ######
-######################################
+## yolov4-using self custom
 
 ### Copy paste cfg file in darkne/cfg and change (batch=1)(subdivision=1) (width=416,height=416)
 ### Copy paste obj.names and obj.data in darknet/data
@@ -107,9 +105,8 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/y
 ./darknet detector demo data/obj.data cfg/yolov4_custom2.cfg yolov4_custom2_last.weights data/Wallclock.mp4
 ./darknet detector demo data/obj.data cfg/yolov4_custom2.cfg yolov4_custom2_last.weights data/Wallclock.mp4 -out_filename output.avi
 
-######################################
-###### yolov4-tiny self custom ######
-######################################
+
+## yolov4-tiny self custom
 
 
 ### Copy paste yolov4-tiny-custom1.cfg file in darkne/cfg and change (batch=1)(subdivision=1)
